@@ -37,7 +37,7 @@ var count = val.replace(/[^0-9]/g, '');
 $('.max'+count).on('blur',function(){
     let value = $(this).val().length;
     if(value>count){
-        $('.error_num').text("※50文字以内にしてください");
+        $('.error_num').text("※"+count+"文字以内にしてください");
 
     }
 });
